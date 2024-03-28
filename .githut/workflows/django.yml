@@ -19,7 +19,7 @@ jobs:
     - name: Install dependencies
       run: |
         pip install pipenv
-        sinc pipenv --dev
+        pipenv sync --dev
       - name: Rodar testes automáticos
         run:
           pipenv run pytest webdev
